@@ -3,7 +3,7 @@ const path = require('path');
 const session = require('express-session')
 const multer = require('multer')
 const fs = require('fs')
-const port = 3000
+const port = process.env.PORT || 3000
 const app = module.exports = express();
 // config
 app.set('view engine', 'ejs');
